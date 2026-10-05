@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #526b91;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+
+.hero {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.small-title {
+    color: #526b91;
+    font-size: 13px;
+}
+
+.button {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 10px 18px;
+    margin: 10px 5px 0 0;
+    border-radius: 3px;
+}
+
+.outline {
+    background: white;
+    color: #222;
+    border: 1px solid #222;
+}
+
+.profile-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.initials {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #e5e5e5;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.page-heading {
+    padding: 50px 0 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border: 1px solid #ddd;
+}
+
+.tag {
+    display: inline-block;
+    background: #eee;
+    padding: 3px 8px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.contact-box {
+    max-width: 650px;
+    background: white;
+    padding: 25px;
+    margin-bottom: 50px;
+    border: 1px solid #ddd;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+footer {
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}

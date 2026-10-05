@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Meet Prajapat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Meet Prajapat.</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="page-heading">
+        <p class="small-title">SAY HELLO</p>
+        <h1>Contact Me</h1>
+        <p>Have a question? Send me a message.</p>
+    </section>
+
+    <section class="contact-box">
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" type="text" required placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="Your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" required placeholder="Your message"></textarea>
+
+            <button class="button" type="submit">Prepare Email</button>
+            <p id="formStatus" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer>© 2026 Meet Prajapat</footer>
+
+</body>
+</html>
